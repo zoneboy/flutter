@@ -297,12 +297,15 @@ button.explore {
 	align-items: center;
 	justify-content: center;
 	color: white !important;
+	/*height: 300px;*/
 	/*width: 50%;*/
 /*margin: -.5em auto; text-align:center; width: 90%; height: 390px;	*/
 }
 
 #tokenomics canvas#myChart {
 	padding: 20px;
+	/*width: 652px;*/
+	/*height: 300px;*/
 	/*width: 50% !important;*/
 	/*height: 50% !important;*/
 	/*font-size: 100pt;*/
@@ -362,13 +365,13 @@ button.explore {
                 background-color: #15182d;
                 color: #FFF;
                 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-                margin: 0;
+                /*margin: 0;*/
                 /*font-size: 30pt;*/
-                padding: 100px;
+                /*padding: 100px;*/
             }
 
             .coolRoadmap-title {
-                font-size: 15pt !important;
+                font-size: 12pt !important;
             }
 
            /* #CoolRoadmapWrapper > div.coolRoadmap-container.center > div > div:nth-child(1) > div.coolRoadmap-node.coolRoadmap-milestone.pseudoStyle105781440.coolRoadmap-complete > div:nth-child(2) {
@@ -389,7 +392,9 @@ button.explore {
     font-size: 0px;
     font-weight: 500;
             }
-
+.coolRoadmap-container.center .coolRoadmap-wrapper .coolRoadmap-column {
+	/*flex: 0;*/
+}
 
 @media screen and (max-width: 1270px) {
   .caption, .image, .box, .boxColor, .imageColor {
@@ -408,6 +413,13 @@ button.explore {
   	align-items: center;
   justify-content: center;
   text-align: center;
+  }
+  .coolRoadmap-container.center .coolRoadmap-wrapper .coolRoadmap-column {
+	flex: 0;
+}
+
+  #tokenomics canvas#myChart {
+  	/*height: 800px !important;*/
   }
   #CoolRoadmapWrapper {
   	padding: 0px;
